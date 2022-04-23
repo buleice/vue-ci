@@ -8,6 +8,7 @@ root = true
 
 # 缩进的类型 [space | tab]
 indent_style = tab
+max_line_length = 100
 
 # 缩进的大小
 # tab_width: 设置整数用于指定替代tab的列数。默认值就是indent_size的值，一般无需指定。
@@ -31,3 +32,10 @@ indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.{yml,yaml,json}]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
